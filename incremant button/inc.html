@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Increment Button</title>
+  <style>
+    /* CSS styles for the body */
+    body {
+      background-color: lightblue;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* CSS styles for the button container */
+    .button-container {
+      text-align: center;
+    }
+
+    /* CSS styles for the button */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* CSS styles for the increment button */
+    .increment {
+      background-color: #4CAF50;
+    }
+
+    /* CSS styles for the save button */
+    .save {
+      background-color: #008CBA;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <h2>Increment Button</h2>
+    <p>Current value: <span id="value">0</span></p>
+
+    <!-- Increment button -->
+    <button class="button increment" onclick="increment()">Increment</button>
+
+    <!-- Save button -->
+    <button class="button save" onclick="save()">Save</button>
+    <h3 id="message">prevouis count: </h3>
+  </div>
+  <script type="text/javascript" src="function.js"></script>
+</body>
+</html>
